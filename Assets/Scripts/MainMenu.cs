@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayPickRight()
     {
-        SceneManager.LoadScene("PickRight");
+        SceneManager.LoadScene("ChooseShapes");
     }
 
     public void PlayCardGame()
@@ -23,6 +23,11 @@ public class MainMenu : MonoBehaviour
 
     public void PlayVisualNovel()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("WelcomeNeighbor");
+    }
+
+    public void ViewGarden()
+    {
+        SceneManager.LoadScene("ViewGarden");
     }
 }
