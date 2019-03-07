@@ -408,7 +408,6 @@ MonoBehaviour:
   blackPiecePrefab: {fileID: 4944106842530192049, guid: f707f03a0afd5e743ae67b6a7ddc9735,
     type: 3}
   boardOffSet: {x: -4, y: 0, z: -4}
-=======
   m_SourcePrefab: {fileID: 100100000, guid: 97fc3a33cfbab9c478b3c7c0abeee058, type: 3}
 --- !u!1001 &2021890181
 PrefabInstance:
