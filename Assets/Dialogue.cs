@@ -9,4 +9,5 @@ public class Dialogue : MonoBehaviour
     public string personName;
     [TextArea(3,10)]
     public string[] sentences;
+    public string[] answers;
 }
