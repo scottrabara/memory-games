@@ -93,7 +93,7 @@ public class Spawn : MonoBehaviour
                     count = 6f;
                     DestroyBoard("shape(Clone)");
                     Utilities.roundCount--;
-                    roundText.text = "Rounds Left: " + Utilites.roundCount;
+                    roundText.text = "Rounds Left: " + Utilities.roundCount;
                     //find new win condition
                     gameText.text = " ";
                 }

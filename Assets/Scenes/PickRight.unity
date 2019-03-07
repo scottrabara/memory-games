@@ -457,7 +457,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 0433f7ac5b1f07e41b1c1761699c461b,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 874619935973591900, guid: e2a1f19cf252f52499800d176552ba05, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e2a1f19cf252f52499800d176552ba05, type: 3}
 --- !u!1 &901689477
 GameObject:
@@ -623,6 +624,7 @@ MonoBehaviour:
   startText: {fileID: 790955539}
   gameText: {fileID: 259848886}
   roundText: {fileID: 1846996791}
+  scoreText: {fileID: 1050771833}
   spawnPos: {fileID: 210933873}
   shape: {fileID: 4173966305464530543}
   spriteArray:
@@ -868,7 +870,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 0433f7ac5b1f07e41b1c1761699c461b,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 874619935973591900, guid: e2a1f19cf252f52499800d176552ba05, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e2a1f19cf252f52499800d176552ba05, type: 3}
 --- !u!1 &1846996789
 GameObject:
