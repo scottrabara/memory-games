@@ -10,4 +10,19 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("PickRight");
     }
+
+    public void PlayCardGame()
+    {
+        SceneManager.LoadScene("CardGameScene");
+    }
+
+    public void PlayFunkyChecker()
+    {
+        SceneManager.LoadScene("FunkyCheckers");
+    }
+
+    public void PlayVisualNovel()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
 }
