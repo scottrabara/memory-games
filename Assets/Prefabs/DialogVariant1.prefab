@@ -51,3 +51,11 @@ MonoBehaviour:
   - I am 5
   - I live on Elf Street
   - How old am I?
+  - Close! I'm actually 5.
+  - That's right!
+  answers:
+  - 2
+  - 5
+  - 10
+  - 30
+  - 5
