@@ -40,7 +40,8 @@ public class DialogueManager : MonoBehaviour
 
         foreach (string sentence in dialogue.sentences)
         {
-            sentences.Enqueue(sentence);
+            var modifiedSentence = sentence.Replace("[Name]", PlayerPrefs.GetString("name_WelcomeNeighbor"));
+            sentences.Enqueue(modifiedSentence);
         }
 
         answers = dialogue.answers;
@@ -98,6 +99,7 @@ public class DialogueManager : MonoBehaviour
         EnableContinue();
         DisplayNextSentence();
         sentences.Clear();
+        continueButton.GetComponentInChildren<Text>(true).text = "RESTART";
     }
 
     public void DisableContinue()

@@ -45,11 +45,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   personName: Ricky
   sentences:
-  - "Hi\t"
-  - Welcome to me
+  - Hi [Name]!
+  - Welcome to the neighborhood!
   - What a wonderful time to be alive.
-  - I am 5
-  - I live on Elf Street
+  - I am 5 years old.
+  - I live on Elf Street.
   - How old am I?
   - Close! I'm actually 5.
   - That's right!
