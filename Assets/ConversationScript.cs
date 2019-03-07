@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class ConversationScript : MonoBehaviour
 {
+    public Text inputText;
     public Canvas dialogCanvas;
 
     public void StartConversation()
     {
+        PlayerPrefs.SetString("name_WelcomeNeighbor", inputText.text);
         gameObject.SetActive(false);
         dialogCanvas.GetComponent<DialogScript>().Start();
     }
