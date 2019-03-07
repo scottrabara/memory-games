@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class Dialogue
+public class Dialogue : MonoBehaviour
 {
-    public string name;
+    public string personName;
     [TextArea(3,10)]
     public string[] sentences;
 }

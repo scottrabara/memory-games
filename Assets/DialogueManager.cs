@@ -25,10 +25,11 @@ public class DialogueManager : MonoBehaviour
         answerBox.alpha = 0;
     }
 
+
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("Starting conversation with " + dialogue.name);
-        nameText.text = dialogue.name;
+        Debug.Log("Starting conversation with " + dialogue.personName);
+        nameText.text = dialogue.personName;
 
         sentences.Clear();
 

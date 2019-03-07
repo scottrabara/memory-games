@@ -16,31 +16,40 @@ public class Board : MonoBehaviour
 
     private void GenerateBoard()
     {
-        for (int y = 0; y < 3; y++)
+        for (int z = 0; z < 3; z++)
         {
             for (int x = 0; x < 8; x += 2)
             {
-                GeneratePiece(x, y);
+                GeneratePiece(x, z, true);
+                GeneratePiece(x, z, false);
             }
         }
     }
 
-    private void GeneratePiece(int x, int y)
+    private void GeneratePiece(int x, int z, bool isBlack)
     {
-        var go = Instantiate(blackPiecePrefab, boardOffSet, Quaternion.identity) as GameObject;
-
+        var go = Instantiate(isBlack ? blackPiecePrefab : whitePiecePrefab);
         go.transform.SetParent(transform);
         
         var p = go.GetComponent<Piece>();
         
-        pieces[x, y] = p;
+        pieces[x, z] = p;
+        var startX = isBlack ? -3.5f + (z % 2) : -3.5f + (1 - (z % 2));
+        var factorX = x * 1.0f;
 
-        MovePiece(p, x, y);
+        var startZ = isBlack ? -3.5f : 3.5f;
+        var factorZ = isBlack ? z * 1.0f : z * -1.0f;
+        MovePiece(p, startX + factorX, startZ + factorZ);
     }
 
-    private void MovePiece(Piece p, int x, int y)
+    private void MovePiece(Piece p, float x, float z)
     {
-        // p.transform.position = (Vector3.right * 0) + (Vector3.forward * 0);
-        // p.transform.position = boardOffSet;
+        p.transform.position =
+            new Vector3(
+                x,  // x
+                0f, // y
+                z); // z
+
+        p.transform.rotation = Quaternion.Euler(-90, 0, 0);
     }
 }

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WelcomeNeighbor.unity
     guid: 63f930eb2d8b0c74f98f78cbe357c08f
+  - enabled: 1
+    path: Assets/Scenes/ViewGarden.unity
+    guid: c483f913db1c1d649afa66fd92094139
   m_configObjects: {}
